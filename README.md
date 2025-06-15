@@ -1,8 +1,7 @@
 # Overview
 This C++ project computes the determinant of an nxn matrix using the Leibniz permutation formula.
-<div style="text-align:center;">
-    <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3a17a5e0dbdba67fb0555848d7388c4621778c5b" style="background-color:white;" alt="{\displaystyle \det(A)=\sum _{\tau \in S_{n}}\operatorname {sgn}(\tau )\prod _{i=1}^{n}a_{i\tau (i)}=\sum _{\sigma \in S_{n}}\operatorname {sgn}(\sigma )\prod _{i=1}^{n}a_{\sigma (i)i}}">
-</div>
+
+![Screenshot 2024-03-22 212829](https://github.com/ttcpavle/Determinant-calculator-with-permutations/assets/159661698/5a92c367-51e3-4607-b58c-219ea2ebbd36=350x350)
 
  Unlike traditional implementations that generate permutations at runtime (which would result in O(n!) complexity), this project precomputes all permutations and their signs, storing them in a file for O(n) lookup during computation.
 
