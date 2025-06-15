@@ -3,7 +3,7 @@ This C++ project computes the determinant of an nxn matrix using the Leibniz per
 
 ![Screenshot 2024-03-22 212829](https://github.com/ttcpavle/Determinant-calculator-with-permutations/assets/159661698/5a92c367-51e3-4607-b58c-219ea2ebbd36=350x350)
 
- Unlike traditional implementations that generate permutations at runtime (which would result in O(n!) complexity), this project precomputes all permutations and their signs, storing them in a file for O(n) lookup during computation.
+ Unlike traditional implementations that generate permutations at runtime (which would result in O(n!) complexity), this project uses precomputed permutations and their signs, storing them in a file for O(n) lookup during computation.
 
 While this approach appears to have linear time complexity, it comes at the cost of massive memory usage for larger matrices due to the storage of all permutations. In practice, algorithms like LU decomposition or Gaussian elimination (with O(n^3) complexity) are more efficient for larger matrices.
 
